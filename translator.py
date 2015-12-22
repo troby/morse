@@ -37,10 +37,17 @@ def alpha_to_morse(msg):
   for char in msg.strip():
     print a2m[char.upper()],
 
+def morse_to_alpha(msg):
+  print 'translate to alpha!'
+
 def main():
   msg = raw_input('MESSAGE: ')
-  if re.match('[A-Z ]+', msg.upper()):
+  if re.match('^[A-Z ]+$', msg.upper()):
     alpha_to_morse(msg)
+  elif re.match('^[\.\- ]+$', msg.upper()):
+    morse_to_alpha(msg)
+  else:
+    print 'mixed chars detected: enter only alphanumeric, or morse code'
 	
 if __name__ == "__main__":
   main()
