@@ -1,8 +1,11 @@
 Tool for translating between alphanumeric and morse code.
 
-Input should only contain alphanumeric and spaces, or 
-dot '.', dash '-' and spaces. Newlines will be stripped.
+Input should only contain alphanumeric and spaces, or dot '.', dash '-' and spaces.
 
 Input cannot contain a mix of alphanumeric and morse code.
+
+Morse code input should contain spacing between each character pattern.
+
+Spacing between alphanumeric characters does not matter.
 
 Enjoy!
