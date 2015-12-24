@@ -37,13 +37,17 @@ def alpha_to_morse(msg):
   string=''
   for char in msg.strip():
     if re.match(' ', char):
-      string += ' '
       continue
     string += a2m[char.upper()]
-  return string
+    string += ' '
+  return string.strip()
 
 def morse_to_alpha(msg):
   return 'translate to alpha!'
+  string=''
+  seq=msg.strip().split(' ')
+  for char in seq:
+    string += m2a[char]
 
 def main():
   msg = raw_input('MESSAGE: ')
