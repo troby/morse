@@ -6,3 +6,9 @@ try:
   print 'alpha_to_morse() OK'
 except:
   print 'alpha_to_morse() FAIL'
+
+try:
+  assert 'SOS SOS' == morse.morse_to_alpha('...---... ...---...')
+  print 'morse_to_alpha() OK'
+except:
+  print 'morse_to_alpha() FAIL'
