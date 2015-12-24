@@ -35,6 +35,9 @@ m2a = {
 
 def alpha_to_morse(msg):
   for char in msg.strip():
+    if re.match(' ', char):
+      print ' ',
+      continue
     print a2m[char.upper()],
 
 def morse_to_alpha(msg):
